@@ -12,6 +12,7 @@
   background-size: cover;
   margin: 0 auto;
   max-width: 320px;
+  padding: 72px 0;
 }
 @media only screen and (min-width: 768px) {
   .hero {
@@ -22,6 +23,7 @@
         url("../images/hero-bg-tablet@2x.jpg") 2x
       );
     max-width: 768px;
+    padding: 112px 0;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -33,6 +35,7 @@
         url("../images/hero-bg-desktop@2x.jpg") 2x
       );
     max-width: 1440px;
+    padding: 188px 0;
   }
 }
 .hero .container {
@@ -46,14 +49,14 @@
 @media only screen and (min-width: 768px) {
   .hero .container {
     justify-content: flex-start;
-    flex-direction: column;
-    padding: 112px 0;
+    gap: 36px;
+    padding: 0;
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .hero .container {
-    padding: 188px 0;
+    gap: 48px;
   }
 }
 
@@ -70,7 +73,9 @@
 
 @media only screen and (min-width: 768px) {
   .container .hero-title {
-    max-width: 360px;
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
   }
 }
 

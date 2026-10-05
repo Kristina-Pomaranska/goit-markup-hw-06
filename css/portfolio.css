@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 24px;
+  gap: 48px;
 }
 
 .portfolio .card {
@@ -78,14 +78,23 @@
   .card-list {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  .card-all {
-    width: calc(100% - 24px) / 2;
+    gap: 72px 24px;
   }
 }
+
+@media only screen and (min-width: 1158px) {
+  .portfolio .card-list {
+    gap: 48px 24px;
+  }
+}
+
+.card-all {
+  width: (calc(100% - 24px) / 2);
+}
+
 @media only screen and (min-width: 1158px) {
   .card-all {
-    width: calc(100% - 48px) / 3;
+    width: (calc(100% - 48px) / 3);
   }
 }
 .overlay-text {

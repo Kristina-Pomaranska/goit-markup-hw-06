@@ -14,6 +14,30 @@
   text-align: center;
 }
 
+.team-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+}
+
 .social-list {
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +49,6 @@
 @media only screen and (min-width: 768px) {
   .social-list {
     flex-direction: row;
-    max-width: calc(100% - 24px) / 2;
   }
 }
 @media only screen and (min-width: 1158px) {

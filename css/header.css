@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
+  padding: 0 16px;
 }
 
 .header {
@@ -20,6 +20,13 @@
   padding: 0;
   margin: 0;
 }
+
+@media only screen and (max-width: 767.98px) {
+  .logo {
+    padding: 16px 0;
+  }
+}
+
 .logo-part {
   color: #4d5ae5;
 }
@@ -37,8 +44,15 @@
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-left: 76px;
+  margin-left: 120px;
 }
+
+@media only screen and (min-width: 1158px) {
+  .header-links {
+    margin-left: 76px;
+  }
+}
+
 @media only screen and (max-width: 767.98px) {
   .nav-link {
     display: none;
@@ -55,14 +69,39 @@
   position: relative;
   transition: color 250ms ease-in-out;
 }
+
+.contact {
+  font-style: normal;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .contact {
+    display: none;
+  }
+}
+
 .contact ul {
   display: flex;
   gap: 40px;
 }
+
 .contact .link {
-  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #434455;
   padding: 24px 0;
 }
+
+@media only screen and (min-width: 1158px) {
+  .contact .link {
+    font-weight: 400;
+    color: #434455;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1157.98px) {
   .contact ul {
     flex-direction: column;
