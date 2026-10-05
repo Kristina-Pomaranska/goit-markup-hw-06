@@ -27,24 +27,14 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   border-radius: 4px;
-  padding: 72px 16px 24px;
-  width: 288px;
-
+  padding: 72px 24px 24px;
   max-width: 408px;
+  min-height: 582px;
   background: #fcfcfc;
   box-shadow:
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
-}
-
-@media only screen and (min-width: 768px) {
-  .modal {
-    width: 408px;
-    padding: 72px 24px 24px;
-    max-width: 408px;
-    min-height: 582px;
-  }
 }
 
 .modal-btn {
@@ -86,7 +76,6 @@
 }
 
 .modal-title {
-  max-width: 256px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -94,12 +83,6 @@
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
-}
-
-@media only screen and (min-width: 768px) {
-  .modal-title {
-    max-width: 360px;
-  }
 }
 
 .modal-form-field {
@@ -182,20 +165,11 @@
 }
 
 .modal-form-agreement {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   margin-top: 16px;
 }
 
-@media only screen and (min-width: 768px) {
-  .modal-form-agreement {
-    margin-bottom: 24px;
-  }
-}
-
 .modal-form-policy {
-  display: flex;
-  align-items: center;
-  gap: 8px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16667;
@@ -244,22 +218,16 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  margin-right: 8px;
 
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
 
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: border-color, background-color;
-}
-
-@media only screen and (min-width: 768px) {
-  .modal-form-checkbox {
-    width: 16px;
-    height: 16px;
-  }
 }
 
 .modal-form-checkbox-icon {
