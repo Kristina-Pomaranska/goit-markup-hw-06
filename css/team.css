@@ -20,11 +20,12 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: row;
-  gap: 24px;
+  gap: 72px;
 }
 @media only screen and (min-width: 768px) {
   .social-list {
     flex-direction: row;
+    gap: 64px 24px;
   }
 }
 @media only screen and (min-width: 1158px) {
