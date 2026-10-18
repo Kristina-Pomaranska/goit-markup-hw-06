@@ -29,6 +29,18 @@
   gap: 8px;
 }
 
+@media only screen and (min-width: 768px) {
+  .portfolio .card {
+    width: 356px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .portfolio .card {
+    width: 360px;
+  }
+}
+
 .portfolio .card-all {
   display: flex;
   align-items: flex-start;
@@ -41,6 +53,28 @@
   max-width: 360px;
   min-height: 360px;
   max-height: 420px;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio .card-all {
+    width: 356px;
+    height: 416px;
+    min-width: 288px;
+    max-width: 360px;
+    min-height: 360px;
+    max-height: 420px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .portfolio .card-all {
+    width: 360px;
+    height: 420px;
+    min-width: 288px;
+    max-width: 360px;
+    min-height: 360px;
+    max-height: 420px;
+  }
 }
 
 .overlay {
@@ -75,7 +109,7 @@
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 @media only screen and (min-width: 768px) {
-  .card-list {
+  .portfolio .card-list {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
@@ -89,12 +123,12 @@
 }
 
 .card-all {
-  width: (calc(100% - 24px) / 2);
+  width: calc(100% - 24px) / 2;
 }
 
 @media only screen and (min-width: 1158px) {
   .card-all {
-    width: (calc(100% - 48px) / 3);
+    width: calc(100% - 48px) / 3;
   }
 }
 .overlay-text {

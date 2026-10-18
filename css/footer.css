@@ -67,14 +67,12 @@
   flex-direction: column;
   gap: 16px;
   margin: 0 auto;
-  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
   .info {
     align-items: flex-start;
     margin: 0;
-    margin-bottom: 72px;
     width: 264px;
     text-align: left;
   }
@@ -83,7 +81,6 @@
 @media only screen and (min-width: 1158px) {
   .info {
     margin-bottom: 0;
-    margin-right: 120px;
   }
 }
 
@@ -219,9 +216,9 @@
   border: 1px solid #fff;
   border-radius: 4px;
   padding: 8px 16px;
+  width: 288px;
   height: 40px;
-  width: 100%;
-  max-width: 288px;
+  max-width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;

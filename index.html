@@ -30,17 +30,6 @@
         <a class="logo" href="./index.html"
           ><span class="logo-part">Web</span>Studio</a
         >
-
-        <button type="button" class="burger-menu-btn">
-          <svg
-            class="burger-menu-btn-icon"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <use href="./images/icons.svg#burger-menu"></use>
-          </svg>
-        </button>
         <nav class="nav-link">
           <ul class="header-links">
             <li>
@@ -66,6 +55,17 @@
             </li>
           </ul>
         </address>
+
+        <button type="button" class="burger-menu-btn">
+          <svg
+            class="burger-menu-btn-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -138,7 +138,7 @@
       </section>
       <!-- Team -->
       <section class="team" id="team">
-        <div class="container team-container">
+        <div class="container">
           <h2 class="titles">Our Team</h2>
           <ul class="social-list">
             <li class="team-link">
@@ -327,7 +327,7 @@
                   src="./images/portfolio.png"
                   srcset="
                     ./images/portfolio.png   1x,
-                    ./images/portfoliox2.png 2x
+                    ./images/portfoliox2.jpg 2x
                   "
                   alt="Banking App"
                   width="360"
@@ -353,7 +353,7 @@
                   src="./images/portfolio-1.png"
                   srcset="
                     ./images/portfolio-1.png   1x,
-                    ./images/portfolio-1x2.png 2x
+                    ./images/portfolio-1x2.jpg 2x
                   "
                   alt="Cashless Payment"
                   width="360"
@@ -379,7 +379,7 @@
                   src="./images/portfolio-2.png"
                   srcset="
                     ./images/portfolio-2.png   1x,
-                    ./images/portfolio-2x2.png 2x
+                    ./images/portfolio-3x2.jpg 2x
                   "
                   alt="Meditation App"
                   width="360"
@@ -404,7 +404,7 @@
                   src="./images/portfolio-3.png"
                   srcset="
                     ./images/portfolio-3.png   1x,
-                    ./images/portfolio-3x2.png 2x
+                    ./images/portfolio-3x2.jpg 2x
                   "
                   alt="Taxi Service"
                   width="360"
@@ -429,7 +429,7 @@
                   src="./images/portfolio-4.png"
                   srcset="
                     ./images/portfolio-4.png   1x,
-                    ./images/portfolio-4x2.png 2x
+                    ./images/portfolio-4x2.jpg 2x
                   "
                   alt="Screen Illustrations"
                   width="360"
@@ -454,7 +454,7 @@
                   src="./images/portfolio-5.png"
                   srcset="
                     ./images/portfolio-5.png   1x,
-                    ./images/portfolio-5x2.png 2x
+                    ./images/portfolio-5x2.jpg 2x
                   "
                   alt="Online Courses"
                   width="360"
@@ -639,21 +639,23 @@
       <div class="mobile-menu-container">
         <button class="mobile-menu-button" type="button">
           <svg class="mobile-menu-button-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
+            <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
 
-        <ul class="mobile-menu-list">
-          <li class="mobile-menu-item">
-            <span class="span-mobile"><a href="#features">Features</a></span>
-          </li>
-          <li class="mobile-menu-item">
-            <a href="#team">Team</a>
-          </li>
-          <li class="mobile-menu-item">
-            <a href="#portfolio">Portfolio</a>
-          </li>
-        </ul>
+        <nav class="nav-menu">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <span class="span-mobile"><a href="#features">Features</a></span>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#team">Team</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </nav>
 
         <address class="mobile-menu-contact">
           <ul class="mobile-menu-contact-list">
@@ -666,38 +668,38 @@
               <a href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
           </ul>
-
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-link" href="./images/icons.svg#instagram">
-                <svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#instagram" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="./images/icons.svg#twitter">
-                <svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#twitter" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="./images/icons.svg#facebook">
-                <svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#facebook" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="./images/icons.svg#linkedin">
-                <svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#linkedin" />
-                </svg>
-              </a>
-            </li>
-          </ul>
         </address>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link" href="./images/icons.svg#instagram">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="./images/icons.svg#twitter">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="./images/icons.svg#facebook">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="./images/icons.svg#linkedin">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#linkedin" />
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>

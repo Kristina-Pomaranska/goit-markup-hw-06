@@ -15,7 +15,6 @@
   flex-direction: column;
   gap: 72px;
   flex-wrap: nowrap;
-  gap: 24px;
 }
 
 .features-list-box {
@@ -43,8 +42,8 @@
 }
 
 .features .subtitle {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
@@ -52,8 +51,14 @@
   color: #2e2f42;
 }
 
+@media only screen and (min-width: 768px) {
+  .features .subtitle {
+    align-self: flex-start;
+  }
+}
+
 .text-features {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
