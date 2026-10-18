@@ -5,6 +5,9 @@
   flex-direction: column;
   gap: 72px;
 }
+.portfolio .titles {
+  text-align: center;
+}
 
 .portfolio .card-list {
   display: flex;
@@ -47,12 +50,10 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 0;
-  width: 288px;
-  height: 360px;
-  min-width: 288px;
+  width: 100%;
   max-width: 360px;
+  height: auto;
   min-height: 360px;
-  max-height: 420px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -122,12 +123,12 @@
   }
 }
 
-.card-all {
+.portfolio .card-all {
   width: calc(100% - 24px) / 2;
 }
 
 @media only screen and (min-width: 1158px) {
-  .card-all {
+  .portfolio .card-all {
     width: calc(100% - 48px) / 3;
   }
 }

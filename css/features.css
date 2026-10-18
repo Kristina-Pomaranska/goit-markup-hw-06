@@ -39,8 +39,10 @@
     flex-wrap: nowrap;
     gap: 24px;
   }
+  .features-list-box {
+    width: calc((100% - 72px) / 4);
+  }
 }
-
 .features .subtitle {
   font-weight: 700;
   font-size: 36px;
@@ -54,6 +56,18 @@
 @media only screen and (min-width: 768px) {
   .features .subtitle {
     align-self: flex-start;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .features .subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -69,6 +83,17 @@
 @media (min-width: 768px) and (max-width: 1157.98px) {
   .text-features {
     max-width: 356px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .text-features {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 }
 
